@@ -9,7 +9,7 @@ public class semple {
 		      char char1, char2;
 		      Scanner scanner = new Scanner(System.in);
 		      do{
-		         System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		         System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		         String select = scanner.nextLine();
 		         if(select.equals("1")){
 		            start1=1; start2=4; inc1=1; inc2=-1;
@@ -30,13 +30,13 @@ public class semple {
 		         for(int i = 0; i < 5; i++, start1+=inc1,start2+=inc2){
 		            for(int j = 0; j < start1; j++){
 		               System.out.print(char1);
-		            }
+	         	            }
 		            for(int j = 0; j < start2; j++){
 		               System.out.print(char2);
 		            }
 		            System.out.println();
 		         }
-		         System.out.println("°è¼ÓÇÏ½Ã°Ú½À´Ï±î?(y/n)");
+		         System.out.println("ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(y/n)");
 		      }while(scanner.nextLine().equals("y"));
 		}
 }
