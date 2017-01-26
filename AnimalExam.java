@@ -12,6 +12,26 @@ public class AnimalExam {
 		
 		Monkey tiger2 =new Monkey(2);
 		
+		//tiger1.smoking();
+		tiger2.smoking();
+		
+		Animal tiger3 = tiger2;
+		//tiger.smoking();
+		Monkey tiger4 = (Monkey)tiger3;
+		tiger4.smoking();
+		
+		System.out.println(tiger1 instanceof Animal); //포함한다
+		System.out.println(tiger1 instanceof Monkey); //부모에는 자식이 포함 되어있지않다.
+		System.out.println(tiger2 instanceof Animal);//자식에는 부모가 포함되어있다.
+		System.out.println(tiger2 instanceof Monkey);//자기자신 당연히 포함.
+		System.out.println(tiger3 instanceof Animal);//포함
+		System.out.println(tiger3 instanceof Monkey);//부모의 그릇에 더큰 자시의 인스턴스가 들어온것,가능
+		System.out.println(tiger4 instanceof Animal);//자식에 부모를 강제 형식을 바꿔서 넣어줌 
+		System.out.println(tiger4 instanceof Monkey);//숨어있던 자식의 일부분을 형식을 바꿔서 살려서 넣어줌 자식의 그릇에.
+		
+		
+		///////////////////////////////////////////////
+		
 		System.out.println(tiger1.attack(tiger2));
 		System.out.println(tiger2.strength);
 		System.out.println(tiger2.attack(tiger1));

@@ -28,6 +28,7 @@ public class Monkey extends Animal{
 		}
 		@Override
 		boolean attack(Animal enemy){
+
 			if(this.alive == true && enemy.alive ==true){
 			int defence = enemy.weight;
 			defence = defence / (enemy.age*100/enemy.life);
@@ -65,5 +66,8 @@ public class Monkey extends Animal{
 		    }
 			return false;
 		 }
+		void smoking(){
+			System.out.println("뻐끔뻐끔");
+		}
 	}
 
