@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= indextitle
+    - each board in boards
+    form(method="POST" action="/write")
+      p
+      #{board.NO}
+      #{board.TITLE}
+      p
+      input(type="submit" value="글쓰기")
